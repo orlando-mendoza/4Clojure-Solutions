@@ -24,6 +24,6 @@ Write a function which returns the total number of elements in a sequence.
 One possible solution:
 
 ```clojure
-(reduce (fn[c _] (inc c)) 0 %)
+#(reduce (fn[c _] (inc c)) 0 %)
 ```
 
