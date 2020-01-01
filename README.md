@@ -27,3 +27,21 @@ One possible solution:
 #(reduce (fn[c _] (inc c)) 0 %)
 ```
 
+### 23 - Reverse a Sequence - Special Restrictions: `reverse` `rseq`
+
+Difficulty:	Easy
+Topics:	seqs core-functions
+
+
+Write a function which reverses a sequence.
+```clojure
+(= (__ [1 2 3 4 5]) [5 4 3 2 1])
+(= (__ (sorted-set 5 7 2 7)) '(7 5 2))
+(= (__ [[1 2][3 4][5 6]]) [[5 6][3 4][1 2]])
+```
+
+One posible solution
+```clojure
+#(reduce conj () %)
+```
+
