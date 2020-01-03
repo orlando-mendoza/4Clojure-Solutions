@@ -42,6 +42,22 @@ One posible solution
 ```clojure
 #(reduce conj () %)
 ```
+### 24 - Sum it all up
+Difficulty:	Easy
+Topics:	seqs
+
+Write a function which returns the sum of a sequence of numbers.
+```Clojure
+(= (__ [1 2 3]) 6)
+(= (__ (list 0 -2 5 5)) 8)
+(= (__ #{4 2 1}) 7)
+(= (__ '(0 0 -1)) -1)
+(= (__ '(1 10 3)) 14)
+```
+Solution
+```Clojure
+#(reduce + %)
+```
 
 ### 25 - Find the odd numbers
 Difficulty:	Easy
